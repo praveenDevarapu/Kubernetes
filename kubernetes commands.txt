@@ -1,0 +1,12 @@
+kubectl get all - list all resources
+kubectl api-resources - list api resources
+kubectl get pods - list pods
+kubectl describe po - describe pods
+kubectl get po -o wide - to describe more info
+kubectl delete po - delete pod
+kubectl top pod pod-nginx  --containers -list containers
+kubectl exec -it pod-nginx -c nginx-container --/bin/bash
+curl localhost:80 - for obtaining container info
+mkdir -p configure-pod-cio 
+kubectl create configmap game-config --from-file=configure-pod-container/configmap
+az aks get-credentials -n kube103 -g kube-east-rg
