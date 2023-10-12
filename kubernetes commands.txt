@@ -9,4 +9,10 @@ kubectl exec -it pod-nginx -c nginx-container --/bin/bash
 curl localhost:80 - for obtaining container info
 mkdir -p configure-pod-cio 
 kubectl create configmap game-config --from-file=configure-pod-container/configmap
+kubectl create configmap nginx-configmap --from-file=file1.txt --from-file=file2.txt
+kubectl get cm- get configmap
+
 az aks get-credentials -n kube103 -g kube-east-rg
+
+YWRtaW4=
+MWYyZDFlMmU2N2Rm
