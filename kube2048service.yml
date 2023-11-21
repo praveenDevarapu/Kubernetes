@@ -1,0 +1,11 @@
+kind: Service
+metadata:
+  name: myservice
+  labels:
+    app: servicelabel
+spec:
+  type: NodePort
+  ports:
+    - port: 80
+  selector:
+    app: "2048"
